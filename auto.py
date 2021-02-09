@@ -58,7 +58,7 @@ def main():
                 ffmpeg.run(stream)
 
                 # Grabs Bot-Chat Channel
-                channel = client.get_channel(558932672634945537)
+                channel = client.get_channel(int(keys["botChannelID"]))
             
                 # Uploads the MP3 to the Bot Chat Channel
                 with open('output.mp3', 'rb') as fp:
